@@ -3,7 +3,7 @@
 <h4 align="center"> :sparkles: Developers: Ana Maria Rodriguez Vera, Laiba Zaman, Jennefer Boudreau </h4>
 
 <h2> Description </h2>
-<p> In order to reduce food waste, we have created an application that utilizes Google API to helpe one keep track of the food in their home. It is a voice to text appliation that can in turn suggest recipies to utilize the ingredients. </p>
+<p> In order to reduce food waste, we have created an application that utilizes Google Cloud API to helpe one keep track of the food in their home. It is a voice to text appliation that can in turn suggest recipies to utilize the ingredients. </p>
 
 <h2> Features </h2>
 <p> Voice to Text feature to facilitate oragization, 
