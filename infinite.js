@@ -134,14 +134,14 @@ function main(
     }
 
     if (stream.results[0].isFinal) {
-	process.stdout.write(chalk.green(`${stdoutText}\n`));
-	fs.appendFileSync("ingredients.csv", words + " " ,{ encoding: "utf8", flag: "a" });
-	isFinalEndTime = resultEndTime;
-	lastTranscriptWasFinal = true;
 	if (words.search("ok") > 0){
-	    process.stdout.write("I'M OUT!");
+	    process.stdout.write("I'M OUT! \n");
 	    process.exit();
 	}
+	process.stdout.write(chalk.green(`${stdoutText}\n`));
+	fs.appendFileSync("ingredients.csv", words + "" ,{ encoding: "utf8", flag: "a" });
+	isFinalEndTime = resultEndTime;
+	lastTranscriptWasFinal = true;
     } else {
 	// Make sure transcript does not exceed console character length
 	if (stdoutText.length > process.stdout.columns) {
@@ -239,7 +239,7 @@ function main(
       .pipe(audioInputStreamTransform);
 
   console.log('');
-  console.log('Listening, press Ctrl+C to stop.');
+  console.log('Listening, say "OK" to stop.');
   console.log('');
   console.log('End (ms)       Transcript Results/Status');
   console.log('=========================================================');
